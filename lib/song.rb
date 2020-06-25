@@ -5,7 +5,7 @@ need a class variable and method to keep track of all the songs it creates (Song
 need an array of artists
 need an array of genres 
 also need a count for each genre
-same for artust count
+same for artist count
 =end
 
 
@@ -18,6 +18,7 @@ class Song
   @@count = 0 
   @@artists = [] 
   @@genres = []
+  @@genre_count
   
   def initialize(name, artist, genre)
     @name = name
@@ -26,6 +27,7 @@ class Song
     @@count += 1 
     @@artists << @artist
     @@genres << @genre
+    @@genre_count += 1 
      
   end
 
