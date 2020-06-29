@@ -58,27 +58,4 @@ describe "Song" do
     end
   end
 
-  describe ".artists" do
-    it "is a class method that returns a unique array of artists of existing songs" do 
-      expect(Song.artists).to match(["Jay-Z", "Brittany Spears"])
-    end 
-  end
-
-  describe ".genres" do 
-    it "is a class method that returns a unique array of genres of existing songs" do 
-      expect(Song.genres).to match(["rap", "pop"])
-    end
-  end
-
-  describe ".genre_count" do 
-    it "is a class method that returns a hash of genres and the number of songs that have those genres" do 
-      expect(Song.genre_count).to eq({"pop" => 1, "rap" => 2})
-    end
-  end
-
-  describe ".artist_count" do 
-    it "is a class method that returns a hash of artists and the number of songs that have those artists" do 
-      expect(Song.artist_count).to eq({"Brittany Spears" => 1, "Jay-Z" => 2})
-    end
-  end
 end
